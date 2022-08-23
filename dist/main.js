@@ -1,0 +1,1 @@
+(self.webpackChunkleaderboard=self.webpackChunkleaderboard||[]).push([[179],{138:()=>{ele=document.getElementById("my-app"),ele.innerHTML="Hello World"}},e=>{e(e.s=138)}]);
