@@ -1,7 +1,6 @@
 const app = document.getElementById('my-app');
 
-const content =
-  `<h1>Leaderboard</h1>
+const content = `<h1>Leaderboard</h1>
     <div class="main-content">
       <div class="scores">
         <div class="scores-header">
