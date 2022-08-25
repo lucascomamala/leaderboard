@@ -3,6 +3,13 @@ import createListELement from './listElement.js';
 const LIST_SIZE = 15;
 let listElements = [];
 
+const getRandomScore = (scores) => {
+  let randomScore = {};
+  const randomIndex = Math.floor(Math.random() * scores.length);
+  randomScore = scores[randomIndex];
+  return randomScore;
+};
+
 const buildList = (scores) => {
   listElements = [];
   const table = document.getElementById('recent-scores').firstElementChild;
@@ -17,13 +24,6 @@ const buildList = (scores) => {
     }
     listElements.push(element.innerHTML);
   }
-};
-
-const getRandomScore = (scores) => {
-  let randomScore = {};
-  const randomIndex = Math.floor(Math.random() * scores.length);
-  randomScore = scores[randomIndex];
-  return randomScore;
 };
 
 const populate = async () => {

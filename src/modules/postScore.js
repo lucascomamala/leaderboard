@@ -12,7 +12,8 @@ const validateEntry = (user, score) => {
   if (user.length === 0) {
     // console.log('no user');
     return false;
-  } else if (Number.isNaN(parseInt(score))) {
+  } 
+  if (Number.isNaN(parseInt(score, 10))) {
     // console.log('Score not a number');
     return false;
   }
@@ -34,7 +35,7 @@ const postScore = async (item) => {
     return;
   }
   const gameAddress = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/0ly6jTi9zvHL9a3FJYQo/scores/';
-  const result = await fetch(`${gameAddress}`, {
+  const result = await fetch(`${gameAddress}`, {  // eslint-disable-line no-undef
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
