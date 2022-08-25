@@ -11,9 +11,9 @@ The leaderboard website displays scores submitted by different players. It also 
 - JavaScript
 - Webpack
 
-## Live Demo (if available)
+## Live Demo
 
-[Live Demo Link] (TBA)
+[Live Demo Link](https://lucascomamala.github.io/leaderboard/)
 
 
 ## Getting Started
