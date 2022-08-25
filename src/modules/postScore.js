@@ -19,6 +19,7 @@ const postScore = async (item) => {
     }),
   });
   updateTable(user, score);
+  clearForm();
 };
 
 const updateTable = (user, score) => {
@@ -39,6 +40,13 @@ const validateEntry = (user, score) => {
     return false;
   }
   return true;
+}
+
+const clearForm = () => {
+  const user = document.getElementById('name');
+  const score = document.getElementById('score');
+  user.value = '';
+  score.value = '';
 }
 
 export default postScore;
