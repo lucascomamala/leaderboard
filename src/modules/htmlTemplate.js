@@ -16,7 +16,7 @@ const content = `<h1>Leaderboard</h1>
         <form id="add-score-form" action="index.html" method="post">
           <input type="text" name="name" id="name" placeholder="Your Name"><br>
           <input type="number" name="score" id="score" placeholder="Your Score"><br>
-          <input type="submit" value="Submit">
+          <input type="submit" id="submit-btn" value="Submit">
         </form>
       </div>
     </div>`;
