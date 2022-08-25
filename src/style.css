@@ -47,8 +47,8 @@ h2 {
 }
 
 #refresh-btn {
-  background: #FFFFFF;
-  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.20);
+  background: #fff;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2);
   padding: 8px;
   border: 0;
   border-radius: 4px;
@@ -70,7 +70,6 @@ h2 {
 #refresh-btn:active .icon {
   fill: #5ac938;
 }
-
 
 #refresh-btn.loading {
   background: #def4d7;
@@ -161,11 +160,9 @@ table {
   background: none;
   pointer-events: auto;
   cursor: pointer;
-  background: #a76922;
   border: none;
   padding: 0.5rem 2rem;
   margin: 0;
-  font-family: inherit;
   font-size: inherit;
   position: relative;
   display: inline-block;
