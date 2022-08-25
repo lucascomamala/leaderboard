@@ -47,6 +47,8 @@ input[type~="submit"] {
 #recent-scores {
   border-collapse: collapse;
   width: 90%;
+  max-width: 500px;
+  table-layout: fixed;
 }
 
 table {
