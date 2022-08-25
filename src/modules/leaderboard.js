@@ -1,4 +1,5 @@
 const LIST_SIZE = 15;
+let listElements = [];
 
 const populate = async () => {
   const requestURL = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/0ly6jTi9zvHL9a3FJYQo/scores/';
@@ -12,12 +13,18 @@ const populate = async () => {
 }
 
 const buildList = (scores) => {
+  listElements = [];
   const table = document.getElementById('recent-scores').firstElementChild;
   table.innerHTML = '';
   for (let i = 0; i < LIST_SIZE; i++) {
     const randomScore = getRandomScore(scores);
     const element = createListELement(randomScore.user, randomScore.score);
-    table.appendChild(element)
+    if (!listElements.includes(element.innerHTML)) {
+      table.appendChild(element)
+    } else {
+      i--;
+    }
+    listElements.push(element.innerHTML);
   }
 }
 
