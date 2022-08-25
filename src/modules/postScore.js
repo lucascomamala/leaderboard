@@ -1,3 +1,5 @@
+import createListELement from './listElement.js';
+
 const postScore = async (item) => {
   item.preventDefault();
   const user = document.getElementById('name').value;
@@ -13,8 +15,16 @@ const postScore = async (item) => {
       score: `${score}`,
     }),
   });
-  const data = await result.json();
-  return data;
+  updateTable(user, score);
 };
+
+const updateTable = (user, score) => {
+  const table = document.getElementById('recent-scores').firstElementChild;
+  const element = createListELement(user, score);
+  console.log(element);
+  table.insertAdjacentHTML('afterbegin', element.outerHTML);
+  const lastEle = document.getElementById('recent-scores').firstElementChild.lastChild;
+  lastEle.remove();
+}
 
 export default postScore;

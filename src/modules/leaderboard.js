@@ -1,3 +1,5 @@
+import createListELement from './listElement.js';
+
 const LIST_SIZE = 15;
 let listElements = [];
 
@@ -35,10 +37,4 @@ const getRandomScore = (scores) => {
   return randomScore;
 }
 
-const createListELement = (user, score) => {
-  const element = document.createElement('tr');
-  element.innerHTML = `<td>${user}: ${score}</td>`;
-  return element;
-}
-
-export { populate }
+export default populate;
