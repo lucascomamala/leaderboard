@@ -18,7 +18,23 @@ The leaderboard website displays scores submitted by different players. It also 
 
 ## Getting Started
 
-TBA
+### Clone this repository
+
+```bash
+$ git clone https://github.com/lucascomamala/leaderboard.git
+$ cd leaderboard
+```
+
+### Install
+
+```bash
+$ npm install
+$ npm start # this will make webpack watching for your changes in code
+```
+
+### Run Project
+
+Simply run dist/index.html
 
 ## Authors
 
